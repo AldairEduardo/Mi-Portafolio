@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navegación -->
+    <%- include('partials/navigation') %>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-black via-gray-800 to-black text-white py-16">
+        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center space-y-6 md:space-y-0">
+            <div class="md:w-1/2">
+                <p class="text-lg md:text-2xl mb-2">Hola, me llamo</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Aldair Huamani Rivera<span class="text-green-500">.</span></h1>
+                <p class="text-lg md:text-2xl mb-4">
+                    Soy un analista de datos, especializado en <span class="text-green-400">Power BI</span>, <span class="text-green-400">SQL Server</span>, y <span class="text-green-400">Python</span>. Me apasiona transformar datos en soluciones valiosas.
+                </p>
+                <p class="text-lg md:text-2xl mb-4">
+                    Puedes explorar mis proyectos en <a href="https://github.com/AldairEduardo" target="_blank" class="text-yellow-400 hover:underline">GitHub</a>.
+                </p>
+                <p class="text-lg md:text-2xl mb-4">
+                    Descargar mi CV <a href="https://drive.google.com/file/d/1KDWOj_kPvpReoIwwYHZZj30Xa_RymP_f/view" target="_blank" class="text-red-400 hover:underline">aquí</a>.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/AldairEduardo" target="_blank" class="px-6 py-2 bg-green-500 text-white font-bold rounded-full shadow hover:bg-green-700 transition">GitHub</a>
+                    <a href="https://api.whatsapp.com/send?phone=51924003270&text=Hola%20" target="_blank" class="px-6 py-2 bg-blue-500 text-white font-bold rounded-full shadow hover:bg-blue-700 transition">Contáctame</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.ibb.co/LkHr9wx/foto-para-linkedin.jpg" alt="Foto de Perfil" class="w-64 h-64 rounded-full object-cover shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Habilidades</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">HTML, CSS y JavaScript</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Python</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Web Scraping</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Limpieza y análisis de datos con Pandas</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">SQL</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Power BI</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Git y GitHub</span>
+                <span class="border border-green-500 px-6 py-3 rounded-full text-sm bg-white shadow-md hover:bg-green-100 transition">Modelamiento de Datos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="bg-gradient-to-r from-black via-gray-800 to-black py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-white text-3xl font-bold text-center mb-8">Proyectos</h2>
+            <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Proyecto -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
+                    <h3 class="text-xl font-bold mb-2">Bot Data Telegram</h3>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Python</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Consumo API</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Telegram</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Se emplea la API de la Reniec para obtener datos de personas usando pdfkit y requests.</p>
+                    <a href="https://github.com/AldairEduardo/bot_telegrama" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm flex items-center justify-center hover:bg-green-700 transition">
+                        <i class="fab fa-github mr-2"></i> Ver GitHub
+                    </a>
+                </div>
+                <!-- Proyecto -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
+                    <h3 class="text-xl font-bold mb-2">Web Scraping a DNI.COM</h3>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Python</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Playwright</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Selenium</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Scraping automatizado con herramientas modernas para extraer información del DNI.</p>
+                    <a href="https://github.com/AldairEduardo/WEB-SCRAPING" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm flex items-center justify-center hover:bg-green-700 transition">
+                        <i class="fab fa-github mr-2"></i> Ver GitHub
+                    </a>
+                </div>
+                <!-- Proyecto -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
+                    <h3 class="text-xl font-bold mb-2">Power BI Telefónica del Perú</h3>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Excel</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Base de Datos</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Python</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Pandas</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Power BI</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Se integraron y limpiaron datos con Power Query y Pandas, generando un informe final. <span class="text-red-400">Se encuentra en Privado el Repositorio.</span></p>
+                    <a href="https://github.com/AldairEduardo/Power-Bi-Telefonica-del-Per-" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm flex items-center justify-center hover:bg-green-700 transition">
+                        <i class="fab fa-github mr-2"></i> Ver GitHub
+                    </a>
+                </div>
+                <!-- Proyecto -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
+                    <h3 class="text-xl font-bold mb-2">Bot whatsapp with Llama 3 IA</h3>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Python</span>
+                        <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Pandas</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">Se hizo uso del Api de whatsapp y LLama 3 para automatizar respuestas a los clientes.</p>
+                    <a href="https://github.com/AldairEduardo/Bot-Whatsapp-Llama3-AI" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm flex items-center justify-center hover:bg-green-700 transition">
+                        <i class="fab fa-github mr-2"></i> Ver GitHub
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>
